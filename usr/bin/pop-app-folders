@@ -70,6 +70,11 @@ gsettings set "${APP_FOLDER}-Utility/" apps "[
 'yelp.desktop'
 ]"
 
+echo "BROCK"
+gsettings set org.gnome.settings-daemon.plugins.media-keys.custom-keybinding:/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/DevOne0/ name "WiFi"
+gsettings set org.gnome.settings-daemon.plugins.media-keys.custom-keybinding:/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/DevOne0/ binding "Launch1"
+gsettings set org.gnome.settings-daemon.plugins.media-keys.custom-keybinding:/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/DevOne0/ command "gnome-control-center wifi"
+
 echo "0" > "${CACHE_PATH}"
 
 fi
